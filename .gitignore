@@ -1,0 +1,35 @@
+# исходные данные хакатона (конфиденциально)
+data/raw/
+data/processed/
+data/openmeteo_cache/
+
+# веса моделей и обученные артефакты
+model/
+
+# итоговые сабмиты
+submissions/
+
+# журнал экспериментов (oof содержит y_true организаторов)
+experiments/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# системные
+.DS_Store
+Thumbs.db
+
+# среды разработки
+.idea/
+.vscode/
+
+# временные
+*.log
+*.tmp
+*.swp

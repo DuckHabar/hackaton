@@ -1,0 +1,31 @@
+target_col: "Выработка. Результирующий расчет"
+ts_col: "METEOFORECASTHOUR_OPENM_Datetime"
+n_repair_col: "Кол-во_ВЭУ_в_ремонте"
+n_turbines: 26
+
+train_path: "data/raw/train_dataset.csv"
+test_path: "data/raw/test_dataset_day18.csv"
+
+target_date: "2026-05-18"
+holdout_start: "2026-05-10"
+holdout_end: "2026-05-17"
+loy_years: [2024, 2025]
+
+clip_min: 0.0
+clip_max: 90.09
+
+output_csv: "submissions/day18/may_18_variant_a_lagged.csv"
+output_header: "Выработка"
+output_dir_exp: "experiments/active/EXP-day18-001"
+
+openmeteo_cache: "data/openmeteo_cache"
+openmeteo_lat: 46.8268455973
+openmeteo_lon: 38.7179393185
+openmeteo_models:
+  - "best_match"
+  - "gfs_seamless"
+  - "ecmwf_ifs025"
+  - "icon_seamless"
+  - "gem_seamless"
+  - "ukmo_seamless"
+  - "meteofrance_seamless"
